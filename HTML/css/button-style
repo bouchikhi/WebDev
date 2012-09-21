@@ -1,0 +1,10 @@
+ .btn{
+     border-radius: 35px;
+     background-color: #ff6347;
+     width: 150px;
+     text-align: center;
+     height: 30px;
+     padding: 5px 25px;
+     border: 6px double #f0f8ff;
+     font-size: 22px;
+ }

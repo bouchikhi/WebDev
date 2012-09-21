@@ -1,0 +1,45 @@
+.page-one{
+    background-color: #dcdcdc;
+    font-family: Verdana;
+    font-size: 12px;
+}
+.page-one h1{
+    text-align: center;
+}
+.page-one p{
+    background: rgba(178,165,205,.4);
+    font-size: 22px;
+}
+.page-one label{
+    color: #8a5326;
+    font-size: 16px;
+}
+.page-two{
+    font-size: 19px;
+    font-style: italic;
+    font-family: monospace;
+    background-color: #8a5326;
+    color: #e2e1d7;
+}
+.page-two h1{
+    color: #f5b900;
+}
+.page-three{
+    background-color: #888888;
+    color: #f8f8f8;
+}
+.page-three h1{
+    color: #ff6347;
+}
+.page-three div{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    left: 250px;
+}
+.page-three p{
+    text-align: justify;
+    font-family: times;
+    font-size: 18px;
+    font-weight: bold;
+}

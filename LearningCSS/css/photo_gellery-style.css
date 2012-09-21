@@ -1,0 +1,15 @@
+ol.specials li{
+    width: 30%;
+    float:left;
+
+    margin: 0 15px 1.5em 0;
+}
+img{
+    height: 90%;
+    width: 90%;
+}
+ol .specials li div .special{
+    position: relative;
+    border:15px solid #e2e1d4;
+    border-radius: 8px;
+}

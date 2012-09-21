@@ -1,0 +1,21 @@
+#comment-form fieldset{
+    margin:0 0 15px 0;
+}
+#comment-form fieldset label{
+    display: block;
+    margin:0 0 3px 0;
+    font-weight: bold;
+}
+#comment-form fieldset input,#comment-form fieldset textarea{
+    width: 400px;
+    padding: 5px;
+    font-size: 1.4em;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-radius: 5px;
+    background: #e2e1d7;
+}
+#comment-form fieldset input:focus,#comment-form fieldset textarea:focus{
+    background: #fff;
+}

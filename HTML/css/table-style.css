@@ -1,0 +1,13 @@
+td{
+    border-width: 1px;
+    border-style: solid;
+    font-size: 200%;
+}
+td:hover{
+    background-color: #ff6347;
+}
+#hoverResult{
+    color: #d9d9d9;
+    font-size: 15em;
+    text-align: center;
+}
