@@ -33,15 +33,15 @@ console.log("Cat:"+cat.height.length);
 console.log("Dog:"+dog.height.length);
 var One=function(){
     this.setX=function(x){
-        this.x=x;
+        this.j=x;
     }
     this.getX=function(){
-        return this.x;
+        return this.j;
     }
 };
 var Two=function(){
     this.mulX=function(y){
-        this.x=this.x*2;
+        this.j=this.j*2;
     }
 };
 function extend(parent,child){

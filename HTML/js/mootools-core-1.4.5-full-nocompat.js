@@ -1169,12 +1169,12 @@ var DOMEvent = this.DOMEvent = new Type('DOMEvent', function(event, win){
 		var doc = win.document;
 		doc = (!doc.compatMode || doc.compatMode == 'CSS1Compat') ? doc.html : doc.body;
 		this.page = {
-			x: (event.pageX != null) ? event.pageX : event.clientX + doc.scrollLeft,
-			y: (event.pageY != null) ? event.pageY : event.clientY + doc.scrollTop
+			j: (event.pageX != null) ? event.pageX : event.clientX + doc.scrollLeft,
+			i: (event.pageY != null) ? event.pageY : event.clientY + doc.scrollTop
 		};
 		this.client = {
-			x: (event.pageX != null) ? event.pageX - win.pageXOffset : event.clientX,
-			y: (event.pageY != null) ? event.pageY - win.pageYOffset : event.clientY
+			j: (event.pageX != null) ? event.pageX - win.pageXOffset : event.clientX,
+			i: (event.pageY != null) ? event.pageY - win.pageYOffset : event.clientY
 		};
 		if (type == 'DOMMouseScroll' || type == 'mousewheel')
 			this.wheel = (event.wheelDelta) ? event.wheelDelta / 120 : -(event.detail || 0) / 3;
@@ -1193,8 +1193,8 @@ var DOMEvent = this.DOMEvent = new Type('DOMEvent', function(event, win){
 		var touches = this.touches = event.touches;
 		if (touches && touches[0]){
 			var touch = touches[0];
-			this.page = {x: touch.pageX, y: touch.pageY};
-			this.client = {x: touch.clientX, y: touch.clientY};
+			this.page = {j: touch.pageX, i: touch.pageY};
+			this.client = {j: touch.clientX, i: touch.clientY};
 		}
 	}
 
@@ -2899,7 +2899,7 @@ Array.mirror(Elements);
 /*<ltIE8>*/
 var createElementAcceptsHTML;
 try {
-    createElementAcceptsHTML = (document.createElement('<input name=x>').name == 'x');
+    createElementAcceptsHTML = (document.createElement('<input name=x>').name == 'j');
 } catch (e){}
 
 var escapeQuotes = function(html){
@@ -4300,24 +4300,24 @@ Element.implement({
 
 	getSize: function(){
 		if (isBody(this)) return this.getWindow().getSize();
-		return {x: this.offsetWidth, y: this.offsetHeight};
+		return {j: this.offsetWidth, i: this.offsetHeight};
 	},
 
 	getScrollSize: function(){
 		if (isBody(this)) return this.getWindow().getScrollSize();
-		return {x: this.scrollWidth, y: this.scrollHeight};
+		return {j: this.scrollWidth, i: this.scrollHeight};
 	},
 
 	getScroll: function(){
 		if (isBody(this)) return this.getWindow().getScroll();
-		return {x: this.scrollLeft, y: this.scrollTop};
+		return {j: this.scrollLeft, i: this.scrollTop};
 	},
 
 	getScrolls: function(){
-		var element = this.parentNode, position = {x: 0, y: 0};
+		var element = this.parentNode, position = {j: 0, i: 0};
 		while (element && !isBody(element)){
-			position.x += element.scrollLeft;
-			position.y += element.scrollTop;
+			position.j += element.scrollLeft;
+			position.i += element.scrollTop;
 			element = element.parentNode;
 		}
 		return position;
@@ -4351,38 +4351,38 @@ Element.implement({
 				isFixed = (styleString(this, 'position') == 'fixed');
 
 			return {
-				x: bound.left.toInt() + elemScrolls.x + ((isFixed) ? 0 : htmlScroll.x) - html.clientLeft,
-				y: bound.top.toInt()  + elemScrolls.y + ((isFixed) ? 0 : htmlScroll.y) - html.clientTop
+				j: bound.left.toInt() + elemScrolls.j + ((isFixed) ? 0 : htmlScroll.j) - html.clientLeft,
+				i: bound.top.toInt()  + elemScrolls.i + ((isFixed) ? 0 : htmlScroll.i) - html.clientTop
 			};
 		}
 
-		var element = this, position = {x: 0, y: 0};
+		var element = this, position = {j: 0, i: 0};
 		if (isBody(this)) return position;
 
 		while (element && !isBody(element)){
-			position.x += element.offsetLeft;
-			position.y += element.offsetTop;
+			position.j += element.offsetLeft;
+			position.i += element.offsetTop;
 
 			if (Browser.firefox){
 				if (!borderBox(element)){
-					position.x += leftBorder(element);
-					position.y += topBorder(element);
+					position.j += leftBorder(element);
+					position.i += topBorder(element);
 				}
 				var parent = element.parentNode;
 				if (parent && styleString(parent, 'overflow') != 'visible'){
-					position.x += leftBorder(parent);
-					position.y += topBorder(parent);
+					position.j += leftBorder(parent);
+					position.i += topBorder(parent);
 				}
 			} else if (element != this && Browser.safari){
-				position.x += leftBorder(element);
-				position.y += topBorder(element);
+				position.j += leftBorder(element);
+				position.i += topBorder(element);
 			}
 
 			element = element.offsetParent;
 		}
 		if (Browser.firefox && !borderBox(this)){
-			position.x -= leftBorder(this);
-			position.y -= topBorder(this);
+			position.j -= leftBorder(this);
+			position.i -= topBorder(this);
 		}
 		return position;
 	},
@@ -4391,13 +4391,13 @@ Element.implement({
 		var offset = this.getOffsets(),
 			scroll = this.getScrolls();
 		var position = {
-			x: offset.x - scroll.x,
-			y: offset.y - scroll.y
+			j: offset.j - scroll.j,
+			i: offset.i - scroll.i
 		};
 
 		if (relative && (relative = document.id(relative))){
 			var relativePosition = relative.getPosition();
-			return {x: position.x - relativePosition.x - leftBorder(relative), y: position.y - relativePosition.y - topBorder(relative)};
+			return {j: position.j - relativePosition.j - leftBorder(relative), i: position.i - relativePosition.i - topBorder(relative)};
 		}
 		return position;
 	},
@@ -4407,10 +4407,10 @@ Element.implement({
 		var position = this.getPosition(element),
 			size = this.getSize();
 		var obj = {
-			left: position.x,
-			top: position.y,
-			width: size.x,
-			height: size.y
+			left: position.j,
+			top: position.i,
+			width: size.j,
+			height: size.i
 		};
 		obj.right = obj.left + obj.width;
 		obj.bottom = obj.top + obj.height;
@@ -4419,8 +4419,8 @@ Element.implement({
 
 	computePosition: function(obj){
 		return {
-			left: obj.x - styleNumber(this, 'margin-left'),
-			top: obj.y - styleNumber(this, 'margin-top')
+			left: obj.j - styleNumber(this, 'margin-left'),
+			top: obj.i - styleNumber(this, 'margin-top')
 		};
 	},
 
@@ -4435,12 +4435,12 @@ Element.implement({
 
 	getSize: function(){
 		var doc = getCompatElement(this);
-		return {x: doc.clientWidth, y: doc.clientHeight};
+		return {j: doc.clientWidth, i: doc.clientHeight};
 	},
 
 	getScroll: function(){
 		var win = this.getWindow(), doc = getCompatElement(this);
-		return {x: win.pageXOffset || doc.scrollLeft, y: win.pageYOffset || doc.scrollTop};
+		return {j: win.pageXOffset || doc.scrollLeft, i: win.pageYOffset || doc.scrollTop};
 	},
 
 	getScrollSize: function(){
@@ -4448,16 +4448,16 @@ Element.implement({
 			min = this.getSize(),
 			body = this.getDocument().body;
 
-		return {x: Math.max(doc.scrollWidth, body.scrollWidth, min.x), y: Math.max(doc.scrollHeight, body.scrollHeight, min.y)};
+		return {j: Math.max(doc.scrollWidth, body.scrollWidth, min.j), i: Math.max(doc.scrollHeight, body.scrollHeight, min.i)};
 	},
 
 	getPosition: function(){
-		return {x: 0, y: 0};
+		return {j: 0, i: 0};
 	},
 
 	getCoordinates: function(){
 		var size = this.getSize();
-		return {top: 0, left: 0, bottom: size.y, right: size.x, height: size.y, width: size.x};
+		return {top: 0, left: 0, bottom: size.i, right: size.j, height: size.i, width: size.j};
 	}
 
 });
@@ -4499,35 +4499,35 @@ Element.alias({position: 'setPosition'}); //compatability
 [Window, Document, Element].invoke('implement', {
 
 	getHeight: function(){
-		return this.getSize().y;
+		return this.getSize().i;
 	},
 
 	getWidth: function(){
-		return this.getSize().x;
+		return this.getSize().j;
 	},
 
 	getScrollTop: function(){
-		return this.getScroll().y;
+		return this.getScroll().i;
 	},
 
 	getScrollLeft: function(){
-		return this.getScroll().x;
+		return this.getScroll().j;
 	},
 
 	getScrollHeight: function(){
-		return this.getScrollSize().y;
+		return this.getScrollSize().i;
 	},
 
 	getScrollWidth: function(){
-		return this.getScrollSize().x;
+		return this.getScrollSize().j;
 	},
 
 	getTop: function(){
-		return this.getPosition().y;
+		return this.getPosition().i;
 	},
 
 	getLeft: function(){
-		return this.getPosition().x;
+		return this.getPosition().j;
 	}
 
 });
