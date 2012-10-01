@@ -12,5 +12,5 @@ $(document).ready(function(){
         for(var i=0;i<files.length;i++){
             alert("name: "+files[i].name);
         }
-    })
+    });
 });

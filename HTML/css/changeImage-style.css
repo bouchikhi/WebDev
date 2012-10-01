@@ -1,25 +1,18 @@
-img{
+.changeImage{
     height: 30%;
-    width: 30%;
-    margin-left: auto;
-    margin-bottom: 10px;
-    padding:10px;
-    border: 2px solid #d9d9d9;
-    background-color: rgba(249, 249, 249, 0.98);
-}
-img:hover{
-    height: 31%;
     width: 31%;
-}
-.zoom{
-    height: 30%;
-    width: 30%;
     margin-left: auto;
     margin-bottom: 10px;
     border: 2px solid #d9d9d9;
     background-color: rgba(249, 249, 249, 0.98);
 }
-.zoom:hover{
-    height: 33%;
-    width: 33%;
+.selectedImg{
+    position: relative;
+    left:22%;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 10px;
+    border: 2px solid #d9d9d9;
+    background-color: rgba(249, 249, 249, 0.98);
 }

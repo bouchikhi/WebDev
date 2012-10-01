@@ -1,0 +1,20 @@
+.trStyle td{
+    width:250px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-family: Times;
+    font-size: 26px;
+    background-color: #333333;
+    box-shadow:5px 3px 5px  #838a8a;
+}
+table{
+    border-collapse: collapse;
+}
+.trStyle td:hover{
+    background-color: #666666;
+}
+.trStyle td:hover:after{
+    content: url("../image/eye-32x32.png");
+}
