@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20737594-4516-4d56-b97b-bd4d49124653" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/Practice 14/Z1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/Practice 14/Z2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/Practice 14/Z3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/Practice 14/Z4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/js/WorkDate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/js/workArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/css/jquery.tiltShift.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/js/applyTiltShift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/js/jquery.tiltShift.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/views/tiltShiftView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebDev.iws" />
@@ -75,30 +73,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Z3.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z3.html">
+      <file leaf-file-name="workArray.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/js/workArray.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="59" selection-start="204" selection-end="204" vertical-scroll-proportion="-3.2692308">
+            <state line="39" column="30" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workArray.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/js/workArray.js">
+      <file leaf-file-name="tiltShiftView.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript/views/tiltShiftView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="66" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc;n#countItem#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Z4.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0">
+            <state line="11" column="89" selection-start="557" selection-end="557" vertical-scroll-proportion="0.3575526">
               <folding />
             </state>
           </provider>
@@ -119,8 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/LearningCSS/css/afterAndBefore.css" />
-        <option value="$PROJECT_DIR$/HTML/css/changeImage-style.css" />
         <option value="$PROJECT_DIR$/HTML/Practice 13/Z1.html" />
         <option value="$PROJECT_DIR$/HTML/js/changeImage.js" />
         <option value="$PROJECT_DIR$/HTML/css/Margin-Image.css" />
@@ -133,8 +118,10 @@
         <option value="$PROJECT_DIR$/HTML/Practice 14/Z2.html" />
         <option value="$PROJECT_DIR$/HTML/Practice 14/Z3.html" />
         <option value="$PROJECT_DIR$/HTML/js/WorkDate.js" />
-        <option value="$PROJECT_DIR$/HTML/js/workArray.js" />
         <option value="$PROJECT_DIR$/HTML/Practice 14/Z4.html" />
+        <option value="$PROJECT_DIR$/HTML/js/workArray.js" />
+        <option value="$PROJECT_DIR$/JavaScript/js/applyTiltShift.js" />
+        <option value="$PROJECT_DIR$/JavaScript/views/tiltShiftView.html" />
       </list>
     </option>
   </component>
@@ -175,8 +162,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,7 +190,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
+              <option name="myItemId" value="JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,25 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Practice 14" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
+              <option name="myItemId" value="JavaScript" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -245,8 +216,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,6 +252,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\WebDev\JavaScript\js" />
       <recent name="D:\GitHub\WebDev\HTML\HTML5\audiofiles" />
       <recent name="D:\GitHub\WebDev\HTML\image" />
     </key>
@@ -446,10 +434,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3424191" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,10 +447,10 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.22146508" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39984825" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962063" sideWeight="0.6712095" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962063" sideWeight="0.6575809" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -506,7 +494,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use tag audio HTML5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add practice 14" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -521,26 +509,12 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="add Practice 13" />
     <MESSAGE value="Use tag audio HTML5" />
+    <MESSAGE value="Add practice 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML/js/changeImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="326" selection-end="326" vertical-scroll-proportion="0.12099644" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Practice 13/Z1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="616" selection-end="616" vertical-scroll-proportion="0.38059703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/css/Margin-Image.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="445" selection-end="445" vertical-scroll-proportion="0.69572955" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Practice 13/Z2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="55" selection-start="402" selection-end="402" vertical-scroll-proportion="0.31716418" />
@@ -578,16 +552,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/js/WorkDate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="63" selection-start="297" selection-end="297" vertical-scroll-proportion="0.41463414">
-          <folding />
-        </state>
+        <state line="9" column="63" selection-start="297" selection-end="297" vertical-scroll-proportion="0.41463414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="222" selection-end="222" vertical-scroll-proportion="0.2973761">
-          <folding />
-        </state>
+        <state line="6" column="43" selection-start="222" selection-end="222" vertical-scroll-proportion="0.2973761" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z2.html">
@@ -595,25 +565,42 @@
         <state line="5" column="60" selection-start="205" selection-end="205" vertical-scroll-proportion="0.24781342" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="59" selection-start="204" selection-end="204" vertical-scroll-proportion="-3.2692308">
-          <folding />
-        </state>
+        <state line="5" column="59" selection-start="204" selection-end="204" vertical-scroll-proportion="0.24781342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/js/workArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="66" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+        <state line="39" column="30" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/js/applyTiltShift.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="32" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc;n#countItem#0" expanded="false" />
+            <element signature="e#0#151#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Practice 14/Z4.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript/js/jquery.tiltShift.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0">
+        <state line="29" column="70" selection-start="919" selection-end="919" vertical-scroll-proportion="-1.0127505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/views/tiltShiftView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="89" selection-start="557" selection-end="557" vertical-scroll-proportion="0.3575526">
           <folding />
         </state>
       </provider>
