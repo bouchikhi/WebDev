@@ -11,8 +11,32 @@
             width: 50%;
         }
     </style>
+    <script type="text/javascript">
+        if((document.createElement('audio').canPlayType)){
+            alert("Браузер поддерживает элемент audio");
+        }
+        else{
+            alert("Браузер НЕ поддерживает элемент audio");
+        }
+        function Control(){
+            var audioP=document.getElementById("player");
+            var btn=document.getElementById("controls");
+            if(audioP.paused){
+                audioP.play();
+                btn.innerHTML="Pause";
+            }
+            else{
+                audioP.pause();
+            btn.innerHTML="Play";
+            }
+        }
+    </script>
 </head>
 <body>
-<audio controls src="audiofiles/Hell_Song.mp3">Аудиозапись в MPEG3</audio>
+<audio id="player">
+    <source src="audiofiles/Hell_Song.mp3">
+    Аудиозапись в MPEG3
+</audio>
+<button id="controls" onclick="Control()">Play</button>
 </body>
 </html>

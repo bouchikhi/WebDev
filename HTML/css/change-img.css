@@ -1,0 +1,17 @@
+div:hover{
+    background: url("../image/reWalls.com-63265.jpg");
+}
+div{
+    height: 600px;
+    width: 700px;
+    background: url("../image/reWalls.com-60500.jpg") bottom center;
+
+}
+.smallImg{
+    height: 20%;
+    width: 20%;
+}
+.bigImg{
+    width: 30%;
+    height: 30%;
+}

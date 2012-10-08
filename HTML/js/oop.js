@@ -6,53 +6,77 @@
  * Time: 11:39
  * To change this template use File | Settings | File Templates.
  */
-
-function Animal(){
-    this.weight=0;
-    this.getName=function(){
-        return this.name;
-    };
-    this.height=[];
-
+$(document).ready(function(){
+    function Mammals(weight){
+        this.weight=weight;
+    }
+    var mammals=new Mammals(60);
+function Animal(name,age){
+    this.name=name;
+    this.age=age;
 }
-var animal=new Animal();
-function Rabbit(name){
+    Animal.prototype=mammals;
+var anim=new Animal("Kitty",3);
+function Cat(name){
     this.name=name;
 }
-Rabbit.prototype=animal;
-var rab=new Rabbit("Chuk");
-console.log(rab.getName());
-Rabbit.prototype.say=function(){
-    console.log("Hello!");
-};
-var dog=new Animal();
-var cat=new Animal();
-dog.height.push("One");
-cat.height.push("Two");
-console.log("Cat:"+cat.height.length);
-console.log("Dog:"+dog.height.length);
-var One=function(){
-    this.setX=function(x){
-        this.j=x;
+Cat.prototype=anim;
+var cat=new Cat("Gik");
+//console.log("name:"+cat.name);
+//console.log("age:"+cat.age);
+//console.log("weight:"+cat.weight);
+    var michail=Object.create(null);
+    Object.defineProperty(michail,"last_name",{value:"Michail",
+                                            writable:true,
+                                            configurable:true,
+                                            enumerable:true});
+    Object.defineProperty(michail,"first_name",{value:"Baburovich",
+                                            writable:true,
+                                            configurable:true,
+                                            enumerable:true});
+    Object.defineProperty(michail,"age",{value:19,
+                                         writable:true,
+                                         configurable:true,
+                                         enumerable:true});
+    Object.defineProperty(michail,"gender",{value:"Male",
+                                         writable:true,
+                                         configurable:true,
+                                         enumerable:true});
+    function get_full_name(){
+        return this.first_name+" "+this.last_name;
     }
-    this.getX=function(){
-        return this.j;
+    function set_full_name(new_name){
+        var names=new_name.trim().split(/\s+/)
+            this.first_name=names["0"]||"";
+        this.last_name=names["1"]||"";
     }
-};
-var Two=function(){
-    this.mulX=function(y){
-        this.j=this.j*2;
+    Object.defineProperty(michail,"name",{get:get_full_name,set:set_full_name,configurable:true,enumerable:true});
+    console.log("FirstName: "+michail["first_name"]);
+    console.log("LastName: "+michail["last_name"]);
+    console.log("FullName:"+michail.name);
+//    delete michail["age"];
+    console.log("Age: "+michail["age"]);
+//    delete michail["gender"];
+    console.log("Gender: "+michail["gender"]);
+    console.log("AllPropertyGetOwnPropertyNames: "+Object.getOwnPropertyNames(michail));
+    console.log("AllPropertyKeys: "+Object.keys(michail));
+    var andrey={
+        first_name:"Grin",
+        last_name:"Andrey",
+        human_age:19,
+        gender:"Male",
+        get name(){
+            return this.first_name+" "+this.last_name;
+        },
+        set name(new_name){
+            var names=new_name.trim().split(/\s+/);
+            this.first_name=names["0"] || ""
+            this.last_name=names["1"] || ""
+        },
+        get age(){
+            return this.human_age+" years";
+        }
     }
-};
-function extend(parent,child){
-    var F=function(){}
-        F.prototype=parent.prototype;
-    child.prototype=new F();
-    child.prototype.constructor=child;
-}
-extend(One,Two);
-var a=new Two();
-a.setX(5);
-a.mulX(4);
-Console.log(a.getX());
-
+        console.log("FullName: "+andrey.name);
+        console.log("Age: "+andrey.age);
+});
