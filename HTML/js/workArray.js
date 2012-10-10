@@ -38,3 +38,19 @@ function test2(){
     document.writeln("Исходный массив: ",arr,"<br>");
     document.writeln("Число  положительных:",countItem(arr,cmp2));
 }
+function ItemComparison(array){
+    var min=array[0];
+    for(var i=1;i<array.length;i++){
+        if(Math.abs(array[i])%2==1 && min>array[i]){
+            min=array[i];
+        }
+    }
+    return min;
+}
+function test3(){
+    var arr=[-3,2,-2,5,10,-14,-21];
+    document.writeln("Исходный массив: "+arr+"<br>"+ItemComparison(arr));
+}
+function setArrayShowTimeout(){
+    window.setTimeout(test3,3000);
+}

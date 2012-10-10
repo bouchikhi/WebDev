@@ -54,3 +54,30 @@ function getZodiak(){
     }
     alert(zod);
 }
+function TodayTime(){
+    var hours=new Date().getHours();
+    if(hours>=7 && hours<=8){
+        return "Завтрака";
+    }
+    else if(hours>=13 && hours<=14){
+        return "Обеда";
+    }
+    else if(hours>=19 && hours<=20){
+        return "Ужина";
+    }
+    else if(hours>=9 && hours<=18){
+        return "Работы";
+    }
+    else if(hours>=18 && hours<=23){
+        return "Отдыха";
+    }
+    else if(hours>=23 && hours<=7){
+        return "Сна";
+    }
+}
+function test1(){
+    window.setInterval(showDate,2000);
+}
+function showDate(){
+    document.getElementById("info").innerHTML="Сейчас время: "+TodayTime();
+}

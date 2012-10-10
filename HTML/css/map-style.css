@@ -1,0 +1,34 @@
+.brest{
+    position: absolute;
+    left: 251px;
+    top: 242px;
+}
+.minsk{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+.vitebsk{
+    position: absolute;
+    left: 410px;
+    top:0px;
+}
+.mogilev{
+    position: absolute;
+    left: 505px;
+    top:137px;
+}
+.gomel{
+    position: absolute;
+    left: 468px;
+    top:238px;
+}
+.grodno{
+    position: absolute;
+    left: 273px;
+    top:105px;
+}
+#info{
+    font-family: Cambria;
+    font-size: 1.2em;
+}
