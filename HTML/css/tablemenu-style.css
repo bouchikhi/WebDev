@@ -18,3 +18,7 @@ table{
 .trStyle td:hover:after{
     content: url("../image/eye-32x32.png");
 }
+a:visited{
+    color: #ffffff;
+    font-style: normal;
+}
