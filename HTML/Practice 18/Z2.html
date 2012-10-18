@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        div{
+            position: absolute;
+            top:20px;
+            left: 160px;
+            visibility: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        function show_d(d){
+            div1.style.visibility="hidden";
+            div2.style.visibility="hidden";
+            div3.style.visibility="hidden";
+            div4.style.visibility="hidden";
+            div5.style.visibility="hidden";
+            d.style.visibility="visible";
+        }
+    </script>
+</head>
+<body>
+<a href="javascript:void(0)" onclick="show_d(div1);">Показать слой 1</a>
+<a href="javascript:void(0)" onclick="show_d(div2);">Показать слой 2</a>
+<a href="javascript:void(0)" onclick="show_d(div3);">Показать слой 3</a>
+<a href="javascript:void(0)" onclick="show_d(div4);">Показать слой 4</a>
+<a href="javascript:void(0)" onclick="show_d(div5);">Показать слой 5</a>
+<div id="div1">
+    <h3>Слой номер1</h3>
+    Некоторый текст на слое расположенный. Его можно скрыть и показать, текст может содержать несколько строк
+    </div>
+<div id="div2">
+    <h3>Слой номер2</h3>
+    Слой содержит свой текст. Если показывается то текст на других слоях не виден
+    </div>
+<div id="div3">
+    <h3>Слой номер3</h3>
+    Тоже текст. При работе со слоями надо следить чтобы текст одного слоя не выглядел из-под другого слоя, при
+    самых различных размерах окна браузера и шрифта.
+    </div>
+<div id="div4">
+    <h3>Слой номер4</h3>
+    Здесь нет текста
+    </div>
+<div id="div5">
+    <h3>Слой номер5</h3>
+    И тут тем более нет.
+    </div>
+
+</body>
+</html>
