@@ -1,0 +1,23 @@
+div{
+    position: relative;
+    width: 40%;
+    height:20em;
+}
+#block_one{
+    background-color: #556b2f;
+    float: right;
+}
+#block_two{
+    background-color: #333333;
+    float: left;
+}
+#block_center{
+    display: inline;
+    margin: 15px;
+    font-size: 2em;
+    font-family: fantasy;
+}
+:first-letter{
+    font-size:1.3em;
+    color: red;
+}
