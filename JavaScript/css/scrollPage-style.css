@@ -1,0 +1,16 @@
+div{
+    width: 30%;
+    text-align: justify;
+    background-color: #e6e6e6;
+    position: relative;
+    left: 35%;
+    color: #333333;
+    font-size: 1.3em;
+    font-style: italic;
+    padding:25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+body{
+    background-color: #333333;
+}
