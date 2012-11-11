@@ -1,0 +1,12 @@
+input[type=submit],
+button {
+  color: #fff;
+  background: #faa51a;
+  border: 2px solid #d88300;
+  padding: 5px 12px;
+  font-size: 21px;
+}
+input[type=submit]:active,
+button:active {
+  background: #e99409;
+}
